@@ -1,0 +1,241 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "General Sans";
+  box-sizing: border-box;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+.follower-circle {
+  transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 999;
+  background-color: white;
+  display: none;
+  /* pointer-events: none; */
+}
+.main {
+  background-color: black;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+.anim {
+  width: fit-content;
+  overflow: hidden;
+  .anim-elem {
+    transform: translateY(100%);
+  }
+}
+span {
+  margin-left: 10px;
+  i {
+    transform: rotate(-40deg);
+  }
+}
+.hero {
+  padding: 5px 40px;
+  height: 100vh;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.nav {
+  height: 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  h3,
+  a {
+    font-size: clamp(0.7rem, 1.2vw, 2rem);
+  }
+}
+
+.hero-cnt-top-left {
+  width: 65%;
+  margin-bottom: 8vw;
+  line-height: 0.9;
+  h1,
+  .right-h1 h1 {
+    color: #a3a3a3;
+    font-size: clamp(3rem, 9.7vw, 10rem);
+    font-weight: bolder;
+  }
+  .right-h1 {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+  }
+  .right-h1 h1 {
+    margin-left: 10vw;
+  }
+  #text-right {
+    margin-top: 10px;
+    font-size: clamp(0.4rem, 1vw, 2rem);
+    text-transform: uppercase;
+  }
+}
+.hero-cnt-top-right {
+  width: 100%;
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  h4 {
+    font-size: clamp(0.5rem, 1.1vw, 3rem);
+    text-transform: uppercase;
+  }
+}
+
+.hero-btm {
+  font-size: clamp(0.7rem, 1.1vw, 3rem);
+  text-transform: uppercase;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+
+  .hero-btm-middle {
+    margin-right: 150px;
+  }
+  .hero-btm-right {
+    i {
+      width: 25px;
+      height: 25px;
+      color: black;
+      background-color: #a3a3a3;
+      border-radius: 50%;
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
+
+.exp {
+  margin-top: 100px;
+  padding: 30px;
+  width: 100%;
+  min-height: 100vh;
+  background-color: black;
+}
+.exp:first-child {
+  border-top: 1px solid grey;
+}
+.elem {
+  border-bottom: 0.5px solid grey;
+  color: #a3a3a3;
+  padding: 3vw 1.5vw;
+  width: 90%;
+  border-top: 0.5px solid #888;
+  position: relative;
+  img {
+    position: absolute;
+    z-index: 999;
+    opacity: 0;
+    height: 350px;
+  }
+  .elem-cnt {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    h1 {
+      text-transform: uppercase;
+      font-size: 6vw;
+    }
+  }
+}
+
+.infinite-slider {
+  margin-top: 150px;
+  padding: 2vw 0;
+  border-top: 1px solid #888;
+  border-bottom: 1px solid #888;
+  display: flex;
+  align-items: center;
+  overflow-x: hidden;
+  img {
+    margin: 1vw 3vw;
+  }
+}
+
+.about {
+  color: white;
+  width: 100%;
+  height: 100vh;
+  .about-main {
+    padding-top: 200px;
+    margin-left: 35%;
+    padding-right: 10px;
+    width: 50%;
+    /* background-color: aqua; */
+    display: flex;
+    gap: 50px;
+    justify-content: flex-end;
+    img {
+      width: 18vw;
+      height: 18vw;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+    p {
+      font-size: 1.3vw;
+      line-height: 1.5;
+    }
+    button {
+      margin-top: 20px;
+      background-color: black;
+      color: white;
+      border: 1.5px solid #888;
+      padding: 0.5vw 1.5vw;
+      border-radius: 25px;
+    }
+  }
+  .about-footer {
+    padding-top: 90px;
+    padding-left: 30px;
+    h4 {
+      text-transform: uppercase;
+    }
+  }
+}
+.grey-p-text {
+  color: #888;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+}
+
+footer {
+  margin-top: 100px;
+  padding: 30px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  a,
+  h4 {
+    font-weight: 900;
+    color: white;
+    font-size: 1.1vw;
+    text-transform: uppercase;
+  }
+  .footer-left {
+    display: flex;
+    align-items: center;
+    a {
+      margin-right: 50px;
+    }
+  }
+  .footer-right {
+    a {
+      margin-left: 50px;
+    }
+  }
+}
